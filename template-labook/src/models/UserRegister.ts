@@ -5,4 +5,11 @@ export interface UserRegister {
     email:string,
     password:string
 
+};
+
+export interface UserRegisterCreate {
+    id: string;
+    name: string;
+    email: string;
+    password: string
 }
