@@ -2,13 +2,18 @@ POST http://localhost:3003/users
 Content-Type: application/json
 
 {
-    "name":"teste2",
-    "email":"teste2@teste.com.br",
+    "name":"mauricio",
+    "email":"mauricio@toledo.com.br",
     "password":"12345678"
 }
 ###
  
 POST http://localhost:3003/post 
 Content-Type: application/json
+{
+"photo": "", "description": "POST ", "type":"NORMAL", "authorId": ""
+}
 
-
+###
+GET  http://localhost:3003/users
+Content-Type: application/json
