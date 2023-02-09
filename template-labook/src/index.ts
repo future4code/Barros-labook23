@@ -149,3 +149,13 @@ app.get('/posts/:id', async (req: Request, res: Response) => {
 app.listen(3003, () => {
    console.log("Server running on port 3003")
 })
+const jsonServer = require("json-server"); // importing json-server library
+const server = jsonServer.create();
+const router = jsonServer.router("db.json");
+const middlewares = jsonServer.defaults();
+const port = process.env.PORT || 3006; 
+
+server.use(middlewares);
+server.use(router);
+
+server.listen(port);
